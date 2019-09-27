@@ -3,8 +3,7 @@
 	public class MinHeap : BinaryHeap
 	{
 		public MinHeap(int capacity) : base(capacity)
-		{
-		}
+		{}
 
 		protected override void SiftUp()
 		{

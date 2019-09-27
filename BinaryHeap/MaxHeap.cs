@@ -3,8 +3,7 @@
 	public class MaxHeap : BinaryHeap
 	{
 		public MaxHeap(int capacity) : base(capacity)
-		{
-		}
+		{}
 
 		protected override void SiftUp()
 		{

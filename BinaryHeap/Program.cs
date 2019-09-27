@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace BinaryHeap
 {
@@ -7,6 +8,13 @@ namespace BinaryHeap
 	{
 		static void Main(string[] args)
 		{
+			/*
+				Sample input:
+				3
+				Insert 100
+				Insert 25
+				ExtractMax
+			*/
 			int n = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
 			BinaryHeap heap = new MaxHeap(n);
@@ -32,6 +40,15 @@ namespace BinaryHeap
 					Console.WriteLine(item);
 				}
 			}
+
+			var array = new[] { 3, 1, 2, 5, 8, 4, 3, 9, 11, 6 };
+
+			Stopwatch sw = Stopwatch.StartNew();
+			HeapSort.SortWithoutUsingExtraMemory(array);
+			sw.Stop();
+
+			Console.WriteLine(string.Join(",", array));
+			Console.WriteLine($"elapsed time: {sw.Elapsed}");
 		}
 	}
 }
