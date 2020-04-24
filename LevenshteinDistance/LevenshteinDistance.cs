@@ -13,9 +13,9 @@ namespace LevenshteinDistance
 				for (int m = 0; m <= second.Length; m++)
 				{
 					if (n == 0 && m == 0) distance[n, m] = 0;
-					else if (n == 0) distance[n, m] = m;
-					else if (m == 0) distance[n, m] = n;
-					else
+					else if (n == 0) distance[n, m] = m; // increment each column in the first row
+					else if (m == 0) distance[n, m] = n; // increment along the first column of each row
+					else // Fill in the rest of the matrix
 					{
 						int distanceToDelete = distance[n - 1, m] + 1;
 						int distanceToInsert = distance[n, m - 1] + 1;
@@ -25,7 +25,7 @@ namespace LevenshteinDistance
 					}
 				}
 			}
-
+			// the last cell in the matrix will be the Levenshtein distance between strings
 			return distance[first.Length, second.Length];
 		}
 
