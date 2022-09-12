@@ -25,5 +25,17 @@
 			// expected sum - actual sum
 			return total - sum;
 		}
+
+		// sum of first n natural numbers
+		// 1 + 2 + 3 + 4 + n
+		private static int RecursiveSum(int n)
+		{
+			if (n is 0 or 1)
+			{
+				return n;
+			}
+
+			return n + RecursiveSum(n - 1);
+		}
 	}
 }
