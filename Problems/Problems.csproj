@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="MaximumWealth\" />
+    <Folder Include="FizzBuzzJazz\" />
     <Folder Include="RunningSum\" />
   </ItemGroup>
 
