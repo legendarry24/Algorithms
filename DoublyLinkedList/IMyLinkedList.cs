@@ -6,6 +6,8 @@
 
 		void AddLast(T item);
 
+		LinkedListNode<T> GetMiddleNode();
+
 		void RemoveFirst();
 
 		void RemoveLast();

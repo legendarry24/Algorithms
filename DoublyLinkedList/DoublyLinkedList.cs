@@ -69,6 +69,21 @@ namespace DoublyLinkedList
 			Count++;
 		}
 
+		public LinkedListNode<T> GetMiddleNode()
+		{
+			LinkedListNode<T> middle = _head!;
+			LinkedListNode<T>? end = _head;
+
+			while (end?.Next != null)
+			{
+				middle = middle.Next!;
+				end = end.Next.Next;
+			}
+
+			// when the end node reaches the end of the list, the middle node will be in the right place
+			return middle;
+		}
+
 		public void Add(T item) => AddLast(item);
 
 		public void Clear()
@@ -91,6 +106,7 @@ namespace DoublyLinkedList
 
 				current = current.Next;
 			}
+
 			return false;
 		}
 

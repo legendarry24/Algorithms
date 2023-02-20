@@ -7,6 +7,7 @@
 			var linkedList = new DoublyLinkedList<int>(new[] { 1, 2, 3, 4, 5, 6, 7 });
 
 			Console.WriteLine(linkedList);
+			Console.WriteLine(linkedList.GetMiddleNode().Value);
 
 			linkedList.RemoveLast();
 			linkedList.AddFirst(4);
