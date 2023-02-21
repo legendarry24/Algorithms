@@ -1,5 +1,5 @@
-﻿using Problems.FizzBuzzJazz;
-using Problems.MaximumWealth;
+﻿using Problems.MaximumWealth;
+using Problems.RansomNote;
 
 namespace Problems
 {
@@ -7,9 +7,9 @@ namespace Problems
 	{
 		private static void Main(string[] args)
 		{
-			var problem = new FizzBuzzJazzProblem();
+			var problem = new RansomNoteProblem();
 
-			var result = problem.Solve(105);
+			var result = problem.Solve(("aac", "aabc"));
 
 			Console.WriteLine($"[{string.Join(", ", result)}]");
 
