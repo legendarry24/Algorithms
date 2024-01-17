@@ -10,6 +10,7 @@
   <ItemGroup>
     <Folder Include="MaximumWealth\" />
     <Folder Include="FizzBuzzJazz\" />
+    <Folder Include="GetContactByNumberSubstring\" />
     <Folder Include="RansomNote\" />
     <Folder Include="RunningSum\" />
   </ItemGroup>

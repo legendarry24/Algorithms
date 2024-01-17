@@ -1,4 +1,5 @@
-﻿using Problems.MaximumWealth;
+﻿using Problems.GetContactByNumberSubstring;
+using Problems.MaximumWealth;
 using Problems.RansomNote;
 
 namespace Problems
@@ -14,6 +15,10 @@ namespace Problems
 			Console.WriteLine($"[{string.Join(", ", result)}]");
 
 			Console.WriteLine(new MaximumWealthProblem().Solve(new[] { new[] { 1, 6 }, new[] { 7, 4 }, new[] { 3, 5 } }));
+
+			string[] names = { "Kate", "John", "Alex" };
+			string[] numbers = { "00000001", "911112235", "911145667" };
+			Console.WriteLine(new GetContactByNumberSubstringProblem().Solve((names, numbers, "9111")));
 		}
 	}
 }
