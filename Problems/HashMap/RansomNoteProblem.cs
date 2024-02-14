@@ -1,4 +1,4 @@
-﻿namespace Problems.RansomNote
+﻿namespace Problems.HashMap
 {
 	public class RansomNoteProblem : IProblem<bool, (string RansomNote, string Magazine)>
 	{
